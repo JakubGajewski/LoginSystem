@@ -4,6 +4,7 @@
     <context:component-scan base-package="pl.jakubgajewski.userapi" />
     <context:annotation-config />
     <bean id="userService" class="pl.jakubgajewski.userapi.models.services.UserService" />
+    <bean id="birthdayService" class="pl.jakubgajewski.userapi.models.services.BirthdayService" />
     <bean id="userDao" class="pl.jakubgajewski.userapi.models.UserDAO" />
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
         <property name="dataSource" ref="datasource" />
