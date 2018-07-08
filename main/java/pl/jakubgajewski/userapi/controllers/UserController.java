@@ -28,7 +28,7 @@ public class UserController {
         return modelAndView;
     }
 
-    @PostMapping(value = "/post")
+    @PostMapping(value = "/register")
     public ModelAndView postRegister(HttpServletRequest request, HttpServletResponse response,
                                  @ModelAttribute("user") User user) {
         userService.register(user);

@@ -6,7 +6,7 @@
     <title>Registration</title>
 </head>
 <body>
-<form:form id="regForm" modelAttribute="user" action="registerProcess" method="post">
+<form:form id="regForm" modelAttribute="user" action="register" method="post">
     <table align="center">
         <tr>
             <td>
@@ -26,18 +26,18 @@
         </tr>
         <tr>
             <td>
-                <form:label path="firstname">FirstName</form:label>
+                <form:label path="name">Name</form:label>
             </td>
             <td>
-                <form:input path="firstname" name="firstname" id="firstname" />
+                <form:input path="name" name="name" id="name" />
             </td>
         </tr>
         <tr>
             <td>
-                <form:label path="lastname">LastName</form:label>
+                <form:label path="surname">LastName</form:label>
             </td>
             <td>
-                <form:input path="lastname" name="lastname" id="lastname" />
+                <form:input path="surname" name="surname" id="surname" />
             </td>
         </tr>
         <tr>
@@ -46,22 +46,6 @@
             </td>
             <td>
                 <form:input path="email" name="email" id="email" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <form:label path="address">Address</form:label>
-            </td>
-            <td>
-                <form:input path="address" name="address" id="address" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <form:label path="phone">Phone</form:label>
-            </td>
-            <td>
-                <form:input path="phone" name="phone" id="phone" />
             </td>
         </tr>
         <tr>
