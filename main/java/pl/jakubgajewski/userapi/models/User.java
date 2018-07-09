@@ -9,7 +9,7 @@ public class User {
     String surname;
     String email;
     //TODO:
-    Date birthday;
+    //Date birthday;
 
     public String getUsername() {
         return username;
@@ -50,8 +50,5 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-
-
-
 
 }

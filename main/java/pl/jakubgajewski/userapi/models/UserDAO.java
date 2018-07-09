@@ -24,8 +24,12 @@ public class UserDAO {
     }
 
     public User validateUser(Login login) {
+        System.out.println("validateUserRAz");
         String sql = "select * from users where username='" + login.getUsername() + "' and password='" + login.getPassword() + "'";
+        System.out.println(sql);
+        System.out.println("validateUserDwa");
         List<User> users = jdbcTemplate.query(sql, new UserMapper());
+        System.out.println("validateUserTrzy");
         return users.size() > 0 ? users.get(0) : null;
     }
 }
