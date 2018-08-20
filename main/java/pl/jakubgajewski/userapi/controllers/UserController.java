@@ -58,11 +58,4 @@ public class UserController {
         }
         return modelAndView;
     }
-
-    @GetMapping(value = "/test")
-    @ResponseBody
-    public String kasza(HttpServletRequest request, HttpServletResponse response) {
-        return "Test";
-    }
-
 }
